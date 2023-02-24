@@ -16,7 +16,13 @@ namespace LinkedListStackOpration
             stack.push(70);
             Console.WriteLine("...........................\n");
             stack.Display();
-              Console.Read();
+            Console.WriteLine("\n..........................");
+            stack.pop();
+            Console.WriteLine("\nRemaining value after pop : ");
+            stack.Display();
+            Console.WriteLine("\n..........................");
+            stack.peek();
+            Console.Read();
         }
     }
 }

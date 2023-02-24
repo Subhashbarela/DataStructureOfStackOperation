@@ -25,7 +25,7 @@ namespace LinkedListStackOpration
                 node.next = this.top;
             }
             this.top = node;
-            Console.WriteLine("{0} pushed to stack ", value);
+            Console.WriteLine("{0} is pushed to stack ", value);
         }
         internal void Display()
         {
@@ -34,6 +34,29 @@ namespace LinkedListStackOpration
             {
                 Console.Write(temp.data+" ");
                 temp = temp.next;
+            }
+        }
+        internal void peek() {
+        if(this.top ==null)
+            {
+                Console.WriteLine("Stack is empty ");
+                return;
+            }
+            else
+            {
+                Console.WriteLine("{0}  is in the top of the stack ", this.top.data);
+            }
+        }
+        internal void pop()
+        {
+            if(this.top == null)
+            {
+                Console.WriteLine("Stack is empty Deletion is not posible ");
+            }
+            else
+            {
+                Console.Write("Value  popped is : {0}  ", this.top.data);
+                this.top = this.top.next;
             }
         }
     }
