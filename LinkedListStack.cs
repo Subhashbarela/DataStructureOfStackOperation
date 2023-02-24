@@ -59,5 +59,13 @@ namespace LinkedListStackOpration
                 this.top = this.top.next;
             }
         }
+         internal void IsEmpty()
+        {
+            while(this.top != null)
+            {
+                peek();
+                pop();
+            }
+        }
     }
 }
