@@ -14,11 +14,16 @@ namespace LinkedListStackOpration
             queue.Enqueue(56);
             queue.Enqueue(30);
             queue.Enqueue(70);
-           
             Console.WriteLine("...........................\n");
             queue.Display();
-           
-           
+            Console.WriteLine("\n...........................\n");
+            queue.Dequeue();
+            Console.WriteLine("\n...........................\n");
+            Console.WriteLine("After Dequeue operation...... \n");
+            queue.Display();
+            Console.Read();
+
+
         }
     }
 }
