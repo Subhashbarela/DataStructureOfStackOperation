@@ -10,25 +10,15 @@ namespace LinkedListStackOpration
     {
         static void Main(string[] args)
         {
-            LinkedListStack stack = new LinkedListStack();
-            stack.push(56);
-            stack.push(30);
-            stack.push(70);
+            LinkedListQueue queue = new LinkedListQueue();
+            queue.Enqueue(56);
+            queue.Enqueue(30);
+            queue.Enqueue(70);
            
             Console.WriteLine("...........................\n");
-            stack.Display();
-            Console.WriteLine("\n..........................");
+            queue.Display();
            
-            stack.pop();
-            Console.WriteLine("\nRemaining value after pop : ");
-            stack.Display();
            
-            Console.WriteLine("\n..........................");
-            stack.peek();
-
-            Console.WriteLine("\n..........................");
-            stack.IsEmpty();
-            Console.Read();
         }
     }
 }
