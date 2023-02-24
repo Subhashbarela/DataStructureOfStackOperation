@@ -14,14 +14,21 @@ namespace LinkedListStackOpration
             stack.push(56);
             stack.push(30);
             stack.push(70);
+           
             Console.WriteLine("...........................\n");
             stack.Display();
+           
             Console.WriteLine("\n..........................");
             stack.pop();
             Console.WriteLine("\nRemaining value after pop : ");
             stack.Display();
+           
             Console.WriteLine("\n..........................");
             stack.peek();
+            
+             Console.WriteLine("\n..........................");
+            stack.IsEmpty();
+            stack.Display();
             Console.Read();
         }
     }
