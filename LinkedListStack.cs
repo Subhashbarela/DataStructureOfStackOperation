@@ -55,8 +55,16 @@ namespace LinkedListStackOpration
             }
             else
             {
-                Console.Write("Value  popped is : {0}  ", this.top.data);
+                Console.Write("Value  popped is : {0} \n ", this.top.data);
                 this.top = this.top.next;
+            }
+        }
+        internal void IsEmpty()
+        {
+            while(this.top != null)
+            {
+                peek();
+                pop();
             }
         }
     }
